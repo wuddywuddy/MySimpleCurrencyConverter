@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<script src="js/convt.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+<body>
+	<div class="main container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			</div>
+		</nav>
+		<div class="col-md-6 well">
+			<h3 class="text-primary">My ALC -  Currency Converter</h3>
+			<hr style="border-top:1px dotted #ccc;">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<h4>Converter</h4>
+				<hr style="border-top:1px groovy #ccc;"/>
+				<div class="form-group">
+					<select onchange="Currency(); Calculate()" class="form-control" id="converter" style="width:30%;">
+						<option value="Dollar">Dollar</option>
+						<option value="Pound">Pound</option>
+						<option value="Euro">Euro</option>
+						<option value="Naira">Naira</option>
+						
+					</select>
+					<br />
+					<input type="number" oninput="Calculate()" class="form-control" id="value1"/>
+				</div>
+				<br /><br />
+				<div class="form-group">
+					<label>Convert to naira</label>
+					<input type="number" class="form-control" id="value2" disabled="disabled"/>
+				</div>
+			</div>
+		</div>
+
+   </div>
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
